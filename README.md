@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-See [https://xcoins-test.herokuapp.com] for ** live demo **
+See [https://xcoins-test.herokuapp.com](https://xcoins-test.herokuapp.com) for **live demo**
 
 ## Available Scripts
 
