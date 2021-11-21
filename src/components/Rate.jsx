@@ -1,7 +1,7 @@
 import React from 'react'
 import { Flex } from 'rebass'
 
-import { Box, Image } from './Swap'
+import { Box, ContainerRate, Image } from './Swap'
 import { Label } from './FormControll'
 
 const Rate = (props) => {
@@ -10,7 +10,7 @@ const Rate = (props) => {
     rate.conversion_rates[receiver.name]
   }`
   return (
-    <Flex justifyContent="space-between" width="100%" padding="0 70px">
+    <ContainerRate justifyContent="space-between" width="100%" padding="0 70px">
       <Flex onClick={handleSwap} padding="0 20px" aria-label="swap">
         <Image src="/media/ex.svg" alt="exchange" />
         <Image src="/media/ex.svg" alt="exchange" rotate="180" />
@@ -28,7 +28,7 @@ const Rate = (props) => {
           <Label color="#3f3351">{content}</Label>
         </Flex>
       </Box>
-    </Flex>
+    </ContainerRate>
   )
 }
 

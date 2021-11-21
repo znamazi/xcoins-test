@@ -7,6 +7,9 @@ export const Label = styled.label`
   padding: ${({ padding }) => padding};
   font-weight: ${({ fontWeight }) => (fontWeight ? fontWeight : '600')};
   cursor: ${({ cursor }) => cursor};
+  @media screen and (max-width: 460px) {
+    font-size: 10px;
+  }
 `
 
 export const Select = styled.select`
@@ -34,9 +37,14 @@ export const Select = styled.select`
   padding: 0 17px;
   @media screen and (max-width: 576px) {
     font-size: ${({ fontSizeXS }) => (fontSizeXS ? fontSizeXS : '16px')};
+    max-width: 150px;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 460px) {
     font-size: ${({ fontSizeXS }) => (fontSizeXS ? fontSizeXS : '14px')};
+    max-width: 110px;
+    ::placeholder {
+      font-size: 10px;
+    }
   }
   ::placeholder {
     color: #909090;
@@ -73,9 +81,11 @@ export const Input = styled.input`
   padding: 0 17px;
   @media screen and (max-width: 576px) {
     font-size: ${({ fontSizeXS }) => (fontSizeXS ? fontSizeXS : '13px')};
+    max-width: 150px;
   }
-  @media screen and (max-width: 450px) {
-    font-size: ${({ fontSizeXS }) => (fontSizeXS ? fontSizeXS : '11px')};
+  @media screen and (max-width: 460px) {
+    max-width: 120px;
+    font-size: 10px;
   }
   ::placeholder {
     color: #909090;

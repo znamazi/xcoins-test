@@ -1,3 +1,4 @@
+import { Flex } from 'rebass'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
@@ -68,4 +69,10 @@ export const Box = styled.div`
 `
 export const Image = styled.img`
   ${(p) => p.rotate && 'transform:rotate(180deg)'}
+`
+
+export const ContainerRate = styled(Flex)`
+  @media screen and (max-width: 576px) {
+    padding: 0 30px !important;
+  }
 `
